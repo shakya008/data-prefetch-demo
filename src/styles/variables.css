@@ -1,0 +1,535 @@
+:root {
+
+  /* colo-darkGray: rs */
+  --darkGray: #394156;
+  --lighterGray: #434b5f;
+  --ultraLightGray: #f9f9fb;
+  --tagsGray: #f7f7f8;
+  --innerGrayBlock: #f7f7f8;
+  --attachmentGrayBox: #f7f7f8;
+  --modalHeadBG: #f7f7f8;
+  --textGray: #939699;
+  --textGray2: #343841;
+  --textGray3: #8a95a5;
+  --mainText: #353942;
+  --secondaryText: #8a8d90;
+  --greenElement: #1eb881;
+  --greenIcon: #4ebb66;
+  --yellowAvatar: #d0c159;
+  --blue: #0095e5;
+  --darkerBlue: #0095e5;
+  --red: #e66150;
+  --error: #e6614f;
+  --badgeBgPrimary: #e6614f;
+  --badgeBgSecondary: #0095e5;
+  --danger: #f26d5b;
+  --mainBackground: #f4f4f5;
+  --grayIcon: #a0a4ad;
+  --grayColor1: #d5d7da;
+  --grayColor2: #959ead;
+  --grayElement: #e3e5e8;
+  --grayLines: #e4e5e9;
+  --grayInputLines: #d6d8da;
+  --blueLine: #007ec1;
+  --lightBlue: #f8fafe;
+  --white: #fff;
+  --whiteHover: #f6f6f6;
+  --navyBlue: #434b60;
+  --navyBlueHover: #373e52;
+  --greenElementHover: #1aa372;
+  --navigationGray: #a9aeb4;
+  --currentDay: #f0f2f5;
+  --sectionGray: #f0f2f5;
+  --sectionText: #576370;
+  --close-grey: #a1a1a3;
+  --iconGray: #989da6;
+  --searchGrey: #8b96a6;
+  --addGrey: #cfd2d6;
+  --hover-blue: #0d9ae6;
+  --active-blue: #42b0eb;
+  --searchIconGrey: #a0a5ad;
+  --tabgrey: #cdced0;
+  --input-grey: #ccc;
+  --shadowBlue: #719ece;
+  --header-icon-grey: #8a95a5;
+  --ui-disabled-grey: #eceeef;
+  --borderGrey: #ededee;
+  --headerBorderGrey: #f3f3f3;
+  --subHeaderBorderGrey: #e2e2e3;
+  --lightGreen: #59d450;
+  --lighterGreen: #149c1f;
+  --hoverLightGreen: #4bbb44;
+  --hoverLighterGreen: #188d20;
+  --pointer: pointer;
+  --drag: move;
+  --text: text;
+  --messageGreen: #1ca224;
+  --summaryRightPartition: #e5e7eb;
+  --settingHeaderGrey: #858585;
+  --textColor: #858b92;
+  --lightenBlue: #0697e6;
+  --skyblue: #a3d7f3;
+  --alert-yellow: #e2b61c;
+  --generic-msg-border: #d4d6d9;
+  --underlineGray: #c6c7ca;
+  --midBlack: #565656;
+  --disabled: not-allowed;
+  --grayColor3: #cfd2d6;
+  --modalHeadBG: #f7f7f8;
+  --labelGrey: #586d7c;
+  --logoBlack: #012037;
+  --underlineGrey: #d2d2d4;
+  --topBorderGrey: #f0f0f1;
+
+  /* Viewports */
+  @custom-media --breakpoint-xs (max-width: 749px);
+  @custom-media --breakpoint-sm (min-width: 750px);
+  @custom-media --breakpoint-md (min-width: 1180px);
+  @custom-media --breakpoint-lg (min-width: 1400px);
+  @custom-media --breakpoint-sm-md (min-width: 750px) and (max-width: 1180px);
+  @custom-media --breakpoint-md-lg (min-width: 1180px) and (max-width: 1400px);
+
+  /* Default font styles */
+  --fontSize: 100%;
+  --lineHeight: calc(var(--fontSize) * 1.5);
+  --lineHeightIcons: var(--fontSize);
+  --mainfontFamily: 'proxima_nova_rgregular';
+  --proximaNova: 'proxima_nova_rgregular';
+  --proximaNovaBold: 'proxima_nova_rgbold';
+
+  /* Type Scale */
+  --h1: 2rem;
+  --h2: 1.5rem;
+  --h3: 1.125rem;
+  --h4: 1rem;
+  --h5: 0.9375rem;
+  --h6: 0.75rem;
+  --smallFont: 0.65rem;
+  --smallFontAlt: 0.6875rem;
+  --ultraSmallFont: 0.5rem;
+  --cf1: 0.8125rem;
+  --cf2: 0.875rem;
+  --cf3: 1.25rem;
+  --cf4: 1.1875rem;
+  --cf5: 1.375rem;
+  --cf6: 1.5625rem;
+
+  /* Heights */
+  --navHeight: 130px;
+  --header-height: 60px;
+  --ele-height: 26px;
+
+  /* z-index */
+  --z5: 5;
+
+  /* Button properties */
+  --button-color-white: #fff;
+  --button-color-black: #343841;
+  --button-color-blue: #0095e5;
+  --disabled-button-background: #e3e5e8;
+  --disabled-button-color: var(--textGray3);
+
+  /* --button-bg-color-green: #1eb881; */
+  --button-bg-color-green: #1ca224;
+  --button-bg-green-hover: #199120;
+  --button-bg-color-blue: #0095e5;
+  --button-bg-blue-hover: #0086ce;
+  --button-bg-color-white: #fff;
+  --button-bg-color-red: #d9534f;
+  --button-bg-red-hover: #c9302c;
+  --btn-txt-greeen: #23a12c;
+  --btn-txt-red: var(--error);
+
+  --line-height-input: 2.8rem;
+
+  /* Icons */
+  --icon-guide: '\E000';
+  --icon-sidebar: '\E001';
+  --icon-lock: '\E002';
+  --icon-drag-n-drop: '\E003';
+  --icon-arrow-up: '\E004';
+  --icon-arrow-down: '\E005';
+  --icon-edit: '\E006';
+  --icon-mail-alt: '\E007';
+  --icon-eye: '\E008';
+  --icon-menu: '\E009';
+  --icon-nudge: '\E00A';
+  --icon-arrow-right: '\E00C';
+  --icon-attach: '\E00E';
+  --icon-filter: '\E00F';
+  --icon-plus: '\E010';
+  --icon-repeat: '\E011';
+  --icon-cal: '\E012';
+  --icon-cal-alt: '\E013';
+  --icon-history: '\E014';
+  --icon-setting: '\E015';
+  --icon-success: '\E016';
+  --icon-clock: '\E017';
+  --icon-plus-circle: '\E018';
+  --icon-close: '\E019';
+  --icon-copy: '\E020';
+  --icon-cross2: '\E021';
+  --icon-search: '\E022';
+  --icon-video: '\E023';
+  --icon-wrench: '\E024';
+  --icon-link: '\E025';
+  --icon-dashboard: '\E026';
+  --icon-play: '\E027';
+  --icon-cal-alt2: '\E028';
+
+  /* --icon-expand: '\E029'; */
+  --icon-star: '\E030';
+  --icon-warning: '\E01A';
+  --icon-stack: '\E01B';
+  --icon-trash: '\E01C';
+  --icon-stack-alt: '\E01D';
+  --icon-user: '\E01E';
+  --icon-message: '\E01F';
+  --icon-feedback: '\E00B';
+  --icon-repeat-2: '\E0201';
+  --icon-arrow-left: '\E00D';
+  --icon-bulb: '\E02B';
+  --icon-success-circle: '\E02C';
+  --icon-user-group: '\E02D';
+  --icon-bell: '\E02E';
+  --icon-search-alt: '\E02F';
+  --icon-laptop: '\E0300';
+  --icon-folder-alt: '\E031';
+  --icon-success-alt: '\E032';
+  --icon-bell-alt: '\E02A';
+  --icon-camera: '\E033';
+  --icon-list: '\E034';
+  --icon-vertical-dots: '\e036';
+  --icon-alert: '\e037';
+  --icon-check-circle: '\e038';
+  --icon-info-circle: '\e029';
+  --icon-repeat-3: '\E039';
+  --icon-vertical-dots: '\E036';
+  --icon-expand: '\E03A';
+  --plus-new: '\E03B';
+  --arrow-new: "\e03c";
+  --exp-user-alt: '\e03d';
+  --exp-user-group-alt: '\e03e';
+  --exp-icon-tick: '\e03f';
+  --exp-icon-tick1: '\e040';
+
+
+  /* Box Shadow */
+  --input-box-shadow: 0 0 5px;
+  --list-drop-shadow: 0 3px 14px 1px rgba(0, 0, 0, 0.07);
+  --nav-drop-shadow: 0 8px 30px 6px rgba(0, 0, 0, 0.2);
+  --create-new-drop-shadow: 0 10px 30px 6px rgba(0, 0, 0, 0.2);
+  --tooltip-shadow: 0 6px 30px 0 rgba(0, 0, 0, 0.2);
+  --popover-shadow: 0 2px 9px 0 rgba(0, 0, 0, 0.2);
+  --header-shadow: 0 3px 3px 0 rgba(243, 243, 243, 1);
+  --sub-header-shadow: 0 3px 5px -3px rgba(226, 226, 227, 1);
+  --notification-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.08);
+  --table-row-container-shadow: 0 0 30px 1px rgba(0, 0, 0, 0.2);
+  --container-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+  --selectBox-shadow: 1px 8px 24px 0px rgba(0, 0, 0, 0.19);
+
+  /* custom margin */
+  --m-auto: auto;
+
+  /* custom opacity */
+  --opacity0: 0;
+  --opacity30: 0.3;
+  --opacity50: 0.5;
+  --opacity90: 0.9;
+  --opacity70: 0.7;
+  --opacity100: 1;
+
+  /* 0 - 100% */
+  --drop-width-default: 150px;
+  --drop-width-nav: 170px;
+  --letter-spacing-normal: normal;
+  --medium-select-with: 255px;
+  --medium-double-select-width: 335px;
+  --letter-spacing-new: 0.2px;
+
+  /* custom Selectors */
+  @custom-selector : --formFocus .input, .ui-select-container;
+
+  /* custom radius */
+  --rounder-eight: 8px;
+  --rounder-three: 3px;
+  --rounder-four: 4px;
+  --rounder-thirty: 30px;
+  --rounder-three-bottom: 0 0 3px 3px;
+  --rounder-three-right-bottom: 0 3px 3px 3px;
+  --rounder-three-left-bottom: 3px 0 3px 3px;
+  --rounder-five: 5px;
+  --rounder-five-bottom: 0 0 5px 5px;
+  --rounder-five-right-bottom: 0 0 5px 5px;
+  --rounder-five-left-bottom: 5px 0 5px 5px;
+  --rounder-five-right: 0 5px 5px 0;
+  --rounder-five-left: 5px 0 0 5px;
+  --border-radius: var(--rounder-five);
+  --max-width-375: 375px;
+
+/* ---------------------------------------
+Global Variables
+--------------------------------------- */
+
+  /* Text Alignment */
+  --text-right: right;
+  --pre-line: pre-line;
+  --text-left: left;
+  --text-middle: middle;
+  --text-center: center;
+  --pre-line: pre-line;
+
+  /* Color Codes */
+  --white: #fff;
+  --gray-border-light: #e3e5e8;
+  --gray-border-dark: #d6d8da;
+
+  /* Border-radius (5px) */
+  --border-radius-medium: 5px;
+  --border-radius-four: 4px;
+
+  /* Border Width */
+  --border-width-thin: 1px;
+  --border-width-medium: 2px;
+  --border-width-normal: 3px;
+  --border-width-reset: 0;
+
+  /* Border Styles */
+  --border-solid: solid;
+  --border-dashed: dashed;
+
+  /* Text Decoration */
+  --false: none;
+  --true: underline;
+
+  /* Dimensions */
+  --full: 100%;
+
+  /* custom padding */
+  --space-1: 10px;
+  --space-2: 20px;
+  --space-3: 30px;
+  --space-4: 80px;
+  --space-page: 150px;
+  --space-0-5: 0.25rem;
+  --space-1-5: 0.75rem;
+  --space-0-1: 0.1rem;
+  --space-0_15: 0.9375rem;
+  --space-_14:  0.875rem;
+
+  /* Form Elements */
+  --formBorder: var(--gray-border-light);
+
+  /* icon button dimensions */
+  --icon-btn-height: 40px;
+  --icon-small-btn-height: 30px;
+  --icon-btn-width: 40px;
+  --icon-small-btn-width: 30px;
+  --tab-height: 73px;
+
+  /* ----------------------------------------
+  Component specific variables
+  ---------------------------------------- */
+
+  /* Header */
+  --header-bottom-border: var(--headerBorderGrey);
+  --create-new-icon-gradiant-start: var(--lightGreen);
+  --create-new-icon-gradiant-end: var(--lighterGreen);
+  --create-new-icon-gradiant-hover-start: var(--hoverLightGreen);
+  --create-new-icon-gradiant-hover-end: var(--hoverLighterGreen);
+  --create-new-icon-text-color: var(--white);
+  --header-background: var(--white);
+  --kpi-header-color: var(--header-icon-grey);
+
+  /* Sub-header */
+  --sub-header-border-color: var(--subHeaderBorderGrey);
+  --sub-header-page-title-color: var(--mainText);
+
+  /* Hyperlink */
+  --link-color-default: var(--blue);
+  --link-color-primary: var(--textGray);
+  --link-color-secondary: var(--mainText);
+  --link-color-stepAttachment: var(--textGray2);
+  --link-text-decoration-default: var(--false);
+  --icon-link-color: var(--header-icon-grey);
+
+  /* Text-Heading */
+  --head-color: var(--mainText);
+  --head-font-family: var(--proximaNovaBold);
+  --head-font-size: var(--h3);
+
+  /* Card */
+  --card-border-width: var(--border-width-thin);
+  --card-border-style: var(--border-solid);
+  --card-border-color: var(--gray-border-light);
+  --card-border-radius: var(--border-radius-medium);
+  --card-background-color: var(--white);
+
+  /* List */
+  --list-border-top-width: var(--border-width-thin);
+  --list-border-right-width: var(--border-width-reset);
+  --list-border-bottom-width: var(--border-width-thin);
+  --list-border-left-width: var(--border-width-reset);
+  --list-border-style: var(--border-solid);
+  --list-border-top-color: var(--gray-border-light);
+  --list-border-right-color: var(--gray-border-light);
+  --list-border-bottom-color: var(--gray-border-light);
+  --list-border-left-color: var(--gray-border-light);
+  --list-hover-color: var(--ultraLightGray);
+  --list-text-primary-size: var(--h5);
+  --list-text-primary-color: var(--mainText);
+  --list-text-secondary-size: var(--h5);
+  --list-text-secondary-color: var(--secondaryText);
+
+  /* Accordion theme */
+
+  /* BLUE */
+
+  --accordion-back-blue: var(--navyBlue);
+  --accordion-back-blue-border: var(--darkGray);
+  --accordian-content-text-color: var(--navigationGray);
+  --accordian-text-color: var(--mainText);
+  --accordian-active-link-color: var(--blue);
+  --accordian-hover-background-color: var(--navyBlueHover);
+  --accordian-hover-content-color: var(--blue);
+  --accordian-default-background: var(--white);
+  --accordian-border-color: var(--borderGrey);
+  --accordian-container-border-width: var(--border-width-medium);
+  --sidebar-header-background-color: var(--tagsGray);
+  --hightlight-border: rgba(18, 148, 244, 0.7); 
+  --hightlight-text: #1294f4;
+
+  /* Activities Tab */
+  --mobile-default-color: var(--tabgrey);
+  --mobile-active-tab-color: var(--mainText);
+  --sort-type-color: var(--mainText);
+
+  /* Search Bar theme */
+
+  /* BLUE */
+
+  --searchBar-navy-blue: var(--navyBlue);
+  --searchBar-navy-blue-border: var(--navyBlue);
+  --tab-searchBar-dark-gray: var(--darkGray);
+  --tab-searchBar-dark-gray-border: var(--darkGray);
+
+  /* Create New Button */
+  --createNew-button-color: var(--greenElement);
+
+  /* Navigation */
+  --nav-background-color: var(--white);
+  --message-icon-border-color: var(--white);
+  --hamburger-icon-color: var(--header-icon-grey);
+
+  /* Drop Downs */
+  --create-new-width: 170px;
+  --mobile-label-color: var(--mainText);
+  --dropdown-text-color: var(--mainText);
+  --dropdown-background-color: var(--white);
+  --dropdown-hover-text-color: var(--blue);
+  --disabled-dropdown-color: var(--textGray);
+
+  /* Single and multiple dropdown component */
+  --dropdown-container-border-color: var(--grayElement);
+  --placeholder-color: var(--mainText);
+  --ui-disable-color: var(--ui-disabled-grey);
+  --active-row-background: var(--ultraLightGray);
+  --input-border-color: var(--input-grey);
+  --active-row-color: var(--active-blue);
+  --dropdown-item-color: var(--mainText);
+  --dropdown-options-border-color: var(--grayElement);
+  --white-background: var(--white);
+  --selected-item-hover-color: var(--hover-blue);
+  --close-icon-color: var(--close-grey);
+  --selected-value-outer-container: var(--tagsGray);
+  --plus-circle-color: var(--addGrey);
+  --on-focus-border-color: var(--blue);
+  --search-icon-color: var(--searchGrey);
+  --input-focus-color: var(--blue);
+  --box-shadow-color: var(--shadowBlue);
+
+  --border-radius: var(--border-radius-medium);
+  --border-radius-three: var(--rounder-three);
+
+  --border-width-one: var(--border-width-thin);
+
+  --border-style: var(--border-solid);
+
+  --font-size-medium: var(--h5);
+  --font-small: var(--ultraSmallFont);
+  --font-size-large: var(--h3);
+
+  /* notification */
+  --notification-background-color: var(--lightBlue);
+  --notification-text-color: var(--mainText);
+  --notification-border-color: var(--gray-border-dark);
+  --notification-border-radius: var(--border-radius-medium);
+  --notification-text-small: 12px;
+  --notification-text-medium: 14px;
+  --notification-text-large: 16px;
+
+  /* moved variables from src/components/dropdown-menu/dropdown.css */
+
+  --green-2: #1eb881;
+  --green-3: #1aa372;
+  --shadow-1: 0 10px 30px 6px rgba(0, 0, 0, .2);
+  --shadow-2: 0 10px 30px 6px rgba(0, 0, 0, .2);
+  --shadow-3: 0px 1px 2px 0 rgba(0, 0, 0, 0.1);
+  --drop-shadow-default: var(--shadow-1);
+  --drop-sec-back: var(--green-2);
+  --drop-sec-back-hover: var(--green-3);
+
+  --arrow: {
+      position: absolute;
+      width: 0;
+      height: 0;
+      border-color: transparent;
+      border-style: solid;
+  }
+  ;
+  --arrow-top: {
+      bottom: 0;
+      left: 50%;
+      margin-left: -5px;
+      border-width: 8px 5.5px 0 5.5px;
+  }
+  ;
+  --arrow-right: {
+      top: 50%;
+      left: 0;
+      margin-top: -5px;
+      border-width: 5.5px 8px 5.5px 0;
+  }
+  ;
+  --arrow-bottom: {
+      top: 0;
+      left: 50%;
+      margin-left: -5px;
+      border-width: 0 5.5px 8px 5.5px;
+  }
+  ;
+  --arrow-left: {
+      top: 50%;
+      right: 0;
+      margin-top: -5px;
+      border-width: 5.5px 0 5.5px 8px;
+  }
+  ;
+  --formFocus: {
+      border-color: var(--blueLine);
+      box-shadow: var(--input-box-shadow) rgba(0, 126, 193, 0.70);
+      outline: none;
+  };
+  --space-15: 15px;
+  --space-5: 5px;
+  --select-size-large-3: 630px;
+  --select-size-large-2: 618px;
+  --select-size-large: 590px;
+  --select-size-medium-2: 490px;
+  --select-size-medium: 308px;
+  --wts-input-size : 665px;
+  --wts-select-size : 237px;
+  --size-15: var(--space-15);
+  --notification-height: 71px;
+  --select-min-size: 170px;
+}

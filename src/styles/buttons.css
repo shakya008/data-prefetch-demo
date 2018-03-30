@@ -1,0 +1,152 @@
+@import './variables';
+
+.btn {
+  font-family: var(--proximaNovaBold);
+  font-size: 15px;
+  font-weight: normal;
+  line-height: 1.188rem;
+  min-height: 40px;
+  min-width: 120px;
+}
+
+.btn.add-step--btn,
+.btn.add-section--btn {
+  font-family: var(--proximaNova);
+}
+
+.btn-small {
+  font-size: 0.8rem;
+  font-weight: normal;
+  line-height: 14px;
+}
+
+.btn-primary {
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06);
+}
+
+.btn-primary:focus,
+.btn-primary:hover {
+  box-shadow: inset 0 0 0 20rem var(--darken-2);
+}
+
+.btn-green {
+  background-color: var(--button-bg-color-green);
+}
+
+.btn-green:hover {
+  background-color: var(--button-bg-green-hover);
+}
+
+.btn-blue {
+  background-color: var(--button-bg-color-blue);
+}
+
+.btn-blue:hover {
+  background-color: var(--button-bg-blue-hover);
+}
+
+.btn-white {
+  background-color: var(--button-bg-color-white);
+  border-color: var(--grayLines);
+  color: var(--button-color-black);
+}
+
+.btn-white:hover {
+  box-shadow: none;
+  color: var(--button-color-blue);
+}
+
+.btn-white.filter-btn:hover {
+  color: var(--button-color-blue);
+}
+
+.btn-white:focus {
+  border-width: 1px;
+  box-shadow: none;
+}
+
+.btn-primary:disabled,
+.btn-primary.is-disabled {
+  background-color: var(--disabled-button-background);
+  border-color: var(--disabled-button-background);
+  color: var(--disabled-button-color);
+  cursor: var(--disabled);
+  opacity: 1;
+}
+
+.btn-primary:disabled:hover,
+.btn-primary.disabled:hover {
+  background-color: var(--disabled-button-background);
+  box-shadow: none;
+  color: var(--disabled-button-color);
+}
+
+.shadow-none {
+  box-shadow: var(--false);
+}
+
+.btn-step-resp {
+  font-size: 0.9rem;
+  height: 36px;
+}
+
+.filter-btn {
+  border-color: var(--gray-border-light);
+  box-shadow: none;
+  color: var(--link-color-secondary);
+  min-width: 40px;
+  padding: 0;
+  width: 40px;
+}
+
+.add-step--btn,
+.add-section--btn {
+  font-size: var(--h6);
+  height: 30px;
+  min-height: 30px;
+  min-width: 160px;
+  padding: 6px;
+  text-transform: uppercase;
+}
+
+.add-step--btn {
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  padding-left: 33px;
+  padding-right: 12px;
+}
+
+.add-section--btn {
+  border-bottom-right-radius: 50px;
+  border-top-right-radius: 50px;
+}
+
+.fullWidth {
+  width: 100%;
+}
+
+.small-button {
+  min-width: 78px;
+}
+
+.done-btn {
+  min-width: auto;
+  padding: .5rem .875rem .5rem .625rem
+}
+
+@media (--breakpoint-xs) {
+
+  .btn {
+    font-size: var(--h5);
+    min-height: 30px;
+    height: 30px;
+    min-width: 85px;
+    padding: 5px 15px;
+  }
+
+  .add-step--btn {
+      padding: 20px 0 33px 0;
+  }
+}
