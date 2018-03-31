@@ -1,7 +1,7 @@
 {
-  "name": "",
+  "name": "Data-prefech-demo",
   "version": "1.0.0",
-  "description": "",
+  "description": "This is data prefetch demo app",
   "scripts": {
     "prebuild": "npm run clean",
     "build:aot": "cross-env AOT=true webpack",

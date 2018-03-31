@@ -8,6 +8,6 @@ import { MyProducer } from './myProducer';
 @Injectable()
 export class MyPrefetch<T> extends PrefetchService<T> {
     constructor(public producer: MyProducer) {
-        super(producer, 50);
+        super(producer);
     }
 }

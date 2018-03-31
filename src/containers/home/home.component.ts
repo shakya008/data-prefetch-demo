@@ -19,6 +19,7 @@ import { Observable } from 'rxjs/Observable';
 export class HomeComponent implements OnInit {
     public data: Array<any> = [];
   constructor(private _myPrefetch: MyPrefetch<any>, private _myProducer: MyProducer) {
+      this._myPrefetch.setBufferSize(50);
     }
     fetchdata() {
         this._myPrefetch.getData(20).subscribe(
