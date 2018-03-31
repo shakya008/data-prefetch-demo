@@ -29,6 +29,16 @@ module.exports = function (config) {
         files: 'app/**/*.css',
         failOnError: false
       }),
-    ]
+    ],
+    devServer: {
+      host: 'localhost',
+      port: 3333,
+      watchOptions: { aggregateTimeout: 300, poll: 1000 },
+      proxy: {
+        '/api/**': {
+          target: 'http://localhost:3000'
+        }
+      }
+    },
   });
 }

@@ -12,7 +12,7 @@ export class MyProducer extends ProducerService {
     }
     public fetchData(): any {
         return Observable.create(obs => {
-            this._http.get('/data').subscribe(
+            this._http.get('/api/data').subscribe(
                 res => {
                     obs.next(res.json());
                     obs.complete();

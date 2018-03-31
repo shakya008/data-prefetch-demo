@@ -18,13 +18,13 @@ module.exports = (app) => {
   app.get('/', function(req, res) {
        res.sendFile(path.join(distPath, indexFileName));
      });
-  app.get('/data',(req, res) => {
+  app.get('/api/data',(req, res) => {
   	let dataArray = [];
-  	for (let i = 0; i< 13; i++) {
+  	for (let i = 0; i< 30; i++) {
   		dataArray.push(getData(id++));
   	}
     const current = new Date().getTime();
-    while(new Date().getTime() < current + 5000) {
+    while(new Date().getTime() < current + 4000) {
       ;
     }
   	res.send(dataArray);

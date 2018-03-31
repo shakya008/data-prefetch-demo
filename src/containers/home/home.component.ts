@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { MyPrefetch } from './myPrefetch';
 import { MyProducer } from './myProducer';
+import { Observable } from 'rxjs/Observable';
+
 
 
 
@@ -19,15 +21,24 @@ export class HomeComponent implements OnInit {
   constructor(private _myPrefetch: MyPrefetch<any>, private _myProducer: MyProducer) {
     }
     fetchdata() {
-        this._myPrefetch.getData(9).subscribe(
+        this._myPrefetch.getData(20).subscribe(
             data => {
                 this.data = this.data.concat(data);
             });
     }
     ngOnInit() {
         this.fetchdata();
+        this.bindWindowScroll().subscribe(
+            ev => {
+                this.fetchdata();
+            });
     }
     loadMore() {
         this.fetchdata();
     }
+    public bindWindowScroll(): Observable<any> {
+        return  Observable.fromEvent(window, 'scroll') .filter(() => {
+            return window.pageYOffset + window.innerHeight >= document.body.scrollHeight;
+        });
+  }
 }
