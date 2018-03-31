@@ -16,10 +16,10 @@ import { MyProducer } from './myProducer';
 
 export class HomeComponent implements OnInit {
     public data: Array<any> = [];
-  constructor(private _myPrefetch: MyPrefetch, private _myProducer: MyProducer) {
+  constructor(private _myPrefetch: MyPrefetch<any>, private _myProducer: MyProducer) {
     }
     fetchdata() {
-        this._myPrefetch.getData(5).subscribe(
+        this._myPrefetch.getData(9).subscribe(
             data => {
                 this.data = this.data.concat(data);
             });

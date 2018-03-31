@@ -23,6 +23,10 @@ module.exports = (app) => {
   	for (let i = 0; i< 13; i++) {
   		dataArray.push(getData(id++));
   	}
+    const current = new Date().getTime();
+    while(new Date().getTime() < current + 5000) {
+      ;
+    }
   	res.send(dataArray);
   });
   function getData(id) {

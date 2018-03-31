@@ -6,7 +6,7 @@ import { MyProducer } from './myProducer';
 
 
 @Injectable()
-export class MyPrefetch extends PrefetchService {
+export class MyPrefetch<T> extends PrefetchService<T> {
     constructor(public producer: MyProducer) {
         super(producer, 20);
     }
