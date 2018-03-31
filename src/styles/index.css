@@ -30,31 +30,6 @@
 @import 'basscss-border';
 @import 'basscss-hide';
 
-/* Variables and Utilities */
-/*@import url(https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic);*/
-@import './variables';
-@import './utilities';
-
-body{
-	text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
-	text-rendering: optimizeLegibility !important;
-	-webkit-font-smoothing: antialiased !important;
-	font-family: var(--mainfontFamily);
-}
-
-.ui-dialog-mask {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-}
-.ui-widget-overlay {
-    background: #dfe1e5;
-    opacity: .60;
-    top: 0;
-    left: 0;
-    }
-
-
 
 
 

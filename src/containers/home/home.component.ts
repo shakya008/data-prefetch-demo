@@ -1,4 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { MyPrefetch } from './myPrefetch';
+import { MyProducer } from './myProducer';
+
+
 
 /**
  * @class
@@ -6,11 +10,24 @@ import { Component } from '@angular/core';
  */
 @Component({
   selector: 'home-page',
-  templateUrl: './home-page.html'
+  templateUrl: './home-page.html',
+  providers: [MyPrefetch, MyProducer]
 })
 
-export class HomeComponent {
-
-  constructor() {
+export class HomeComponent implements OnInit {
+    public data: Array<any> = [];
+  constructor(private _myPrefetch: MyPrefetch, private _myProducer: MyProducer) {
+    }
+    fetchdata() {
+        this._myPrefetch.getData(5).subscribe(
+            data => {
+                this.data = this.data.concat(data);
+            });
+    }
+    ngOnInit() {
+        this.fetchdata();
+    }
+    loadMore() {
+        this.fetchdata();
     }
 }

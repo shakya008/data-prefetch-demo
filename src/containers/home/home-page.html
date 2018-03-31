@@ -1,3 +1,7 @@
 <div>
 	home page
+	<div *ngFor="let item of data">
+		<span>{{item.text}}</span>
+	</div>
+	<button (click)="loadMore()">More</button>
 </div>
