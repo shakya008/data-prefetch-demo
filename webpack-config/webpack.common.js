@@ -122,8 +122,7 @@ module.exports = function (options) {
       new webpack.NoEmitOnErrorsPlugin(),
 
       new CopyWebpackPlugin([
-        { from: 'src/assets', to: '../build/assets' },
-        { from: 'src/assets/icon-fonts', to: '../build/assets/icon-fonts' }
+        { from: 'src/assets', to: '../build/assets' }
       ]),
 
       new webpack.ProvidePlugin({
