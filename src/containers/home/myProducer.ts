@@ -1,5 +1,5 @@
 import  { ProducerService } from 'data-prefetch';
-import { Observable } from 'rxjs';
+import { Observable } from 'rxjs/Observable';
 import { Http, Response, Headers, RequestOptions } from '@angular/http';
 import {Injectable } from '@angular/core';
 
